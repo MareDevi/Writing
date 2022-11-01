@@ -55,32 +55,10 @@
     var root = '';
 </script>
 
-<script type="text/javascript">
-    var conn, reloadTimer, connectTimer;
-    var connect = function() {
-        conn = new WebSocket('ws://' + location.host + '/live');
-        conn.onmessage = function(event) {
-            if (event.data === 'change') {
-                if (reloadTimer) clearTimeout(reloadTimer);
-                reloadTimer = setTimeout(function() {
-                    window.location.reload();
-                }, 200);
-            }
-        };
-        conn.onclose = function() {
-            if (connectTimer) clearTimeout(connectTimer);
-            connectTimer = setTimeout(function() {
-                connect();
-            }, 1000);
-        };
-    };
-    connect();
-</script>
-
 
         <meta name="keywords" content="设计,写作,">
         <meta name="description" content="简洁的静态博客构建工具 —— 纸小墨（InkPaper）">
-        <meta name="author" content="MareDevi">
+        <meta name="author" content="">
         <title>简洁的静态博客构建工具 —— 纸小墨（InkPaper）</title>
     </head>
     <body>
@@ -140,7 +118,7 @@
                             <h1 class="post-title" itemprop="name headline">简洁的静态博客构建工具 —— 纸小墨（InkPaper）</h1>
                             <div class="post-meta">
                                 <p>
-                                    Written by <a itemprop="name" href="/about.me.html" rel="author">MareDevi</a> with ♥ on <time datetime="1425204000" itemprop="datePublished"></time> in <a href="/tag/%e8%ae%be%e8%ae%a1/index.html">设计 </a><a href="/tag/%e5%86%99%e4%bd%9c/index.html">写作 </a>
+                                     with ♥ on <time datetime="1425204000" itemprop="datePublished"></time> in <a href="/tag/%e8%ae%be%e8%ae%a1/index.html">设计 </a><a href="/tag/%e5%86%99%e4%bd%9c/index.html">写作 </a>
                                 </p>
                             </div>
                             <div class="post-content" itemprop="articleBody">

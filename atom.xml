@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.w3.org/2005/Atom">
   <title>MareDevi</title>
   <id>writing.maredevi.fun</id>
-  <updated>2022-11-01T09:35:40+08:00</updated>
+  <updated>2022-11-01T09:54:02+08:00</updated>
   <subtitle>Just writing.</subtitle>
   <link href="writing.maredevi.fun"></link>
   <author>
@@ -13,8 +13,5 @@
     <id>tag:,2016-07-11:writing.maredevi.fun/2015/03/01.html</id>
     <content type="html">&lt;p&gt;纸小墨（InkPaper）是一个GO语言编写的开源静态博客构建工具，可以快速搭建博客网站。它无依赖跨平台，配置简单构建快速，注重简洁易用与更优雅的排版。&lt;/p&gt;&#xA;</content>
     <link href="writing.maredevi.fun/2015/03/01.html"></link>
-    <author>
-      <name>MareDevi</name>
-    </author>
   </entry>
 </feed>

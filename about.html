@@ -55,33 +55,11 @@
     var root = '';
 </script>
 
-<script type="text/javascript">
-    var conn, reloadTimer, connectTimer;
-    var connect = function() {
-        conn = new WebSocket('ws://' + location.host + '/live');
-        conn.onmessage = function(event) {
-            if (event.data === 'change') {
-                if (reloadTimer) clearTimeout(reloadTimer);
-                reloadTimer = setTimeout(function() {
-                    window.location.reload();
-                }, 200);
-            }
-        };
-        conn.onclose = function() {
-            if (connectTimer) clearTimeout(connectTimer);
-            connectTimer = setTimeout(function() {
-                connect();
-            }, 1000);
-        };
-    };
-    connect();
-</script>
-
 
         <meta name="keywords" content="">
-        <meta name="description" content="关于作者">
+        <meta name="description" content="About me">
         <meta name="author" content="MareDevi">
-        <title>关于作者</title>
+        <title>About me</title>
     </head>
     <body>
         
@@ -137,18 +115,14 @@
                 <div class="row">
                     <div id="main" class="col-12 clearfix" role="main">
                         <article class="posti" itemscope itemtype="http://schema.org/BlogPosting">
-                            <h1 class="post-title" itemprop="name headline">关于作者</h1>
+                            <h1 class="post-title" itemprop="name headline">About me</h1>
                             <div class="post-meta">
                                 <p>
-                                    Written by <a itemprop="name" href="/about.me.html" rel="author">MareDevi</a> with ♥ on <time datetime="0" itemprop="datePublished"></time> in 
+                                    Written by <a itemprop="name" href="/about.me.html" rel="author">MareDevi</a> with ♥ on <time datetime="1667260800" itemprop="datePublished"></time> in 
                                 </p>
                             </div>
                             <div class="post-content" itemprop="articleBody">
-                                <h2>纸小墨</h2>
-
-<p>构建只为纯粹书写的博客。</p>
-
-<p><a href="http://www.chole.io/">http://www.chole.io/</a></p>
+                                <p>既然你已经来到了这里，那大抵已经是认识我了。</p>
 
                             </div>
                             <div style="display:block;" class="clearfix">
